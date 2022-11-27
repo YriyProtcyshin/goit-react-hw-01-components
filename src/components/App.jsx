@@ -1,16 +1,17 @@
+import { Profile } from 'components/Profile/Profile';
+import userJson from 'user.json';
+
 export const App = () => {
+  console.log(userJson);
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Profile
+      username={userJson.username}
+      tag={userJson.tag}
+      location={userJson.location}
+      avatar={userJson.avatar}
+      followers={userJson.stats.followers}
+      views={userJson.stats.views}
+      likes={userJson.stats.likes}
+    />
   );
 };
