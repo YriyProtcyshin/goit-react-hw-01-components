@@ -1,0 +1,18 @@
+import css from './StatisticCard.module.css';
+
+export const StatisticCard = ({ id, label, percentage }) => {
+  return (
+    <li
+      className={css.item}
+      key={id}
+      style={{ backgroundColor: getRandomHexColor() }}
+    >
+      <span className={css.label}>{label}</span>
+      <span className={css.percentage}>{percentage}%</span>
+    </li>
+  );
+};
+
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+}
