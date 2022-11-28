@@ -1,5 +1,7 @@
 .tableRow {
   height: 30px;
+  color: #767373;
+  font-weight: 400;
 }
 .tableRow:nth-child(2n) {
   background-color: #f2f2f2;
