@@ -1,0 +1,10 @@
+.tableRow {
+  height: 30px;
+}
+.tableRow:nth-child(2n) {
+  background-color: #f2f2f2;
+}
+
+.tableCell {
+  text-align: center;
+}

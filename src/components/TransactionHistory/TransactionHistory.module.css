@@ -1,0 +1,9 @@
+.transactionHistory {
+  margin: 50px auto;
+  width: 600px;
+}
+
+.tableHeader {
+  height: 45px;
+  background-color: aliceblue;
+}
